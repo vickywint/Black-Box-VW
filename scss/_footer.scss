@@ -1,0 +1,13 @@
+ /*FOOTER*/
+ footer {
+    background-color: $negro;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4em;
+   }
+   .logo-footer {
+    position: relative;
+    height: 3em;
+    overflow: hidden;
+   }

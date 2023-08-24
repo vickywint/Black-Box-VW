@@ -1,0 +1,25 @@
+/*COLORES*/
+
+$hueso: #DDD8C4;
+$verde: #A3C9A8;
+$gris: #636564 ;
+$blanco: white;
+$negro: black;
+
+/*FUENTES*/
+$font: "Roboto", sans-serif; 
+
+@font-face {
+    font-family: $font;
+    src: url(../assets/font/Roboto-Light.ttf);
+  }
+  * {
+    font-family: $font;
+  }
+
+/*TAMAÑO TEXTO*/
+$h1: 80px;
+$h1-tablet: 50px;
+$h1-mobile: 30px;
+
+

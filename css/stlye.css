@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/*COLORES*/
+/*FUENTES*/
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../assets/font/Roboto-Light.ttf);
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*TAMAÑO TEXTO*/
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*MENU BARRA*/
+.menu-header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4em;
+  /* fixed*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* z-index*/
+  z-index: 1;
+}
+
+.logo-header {
+  height: 3em;
+  overflow: hidden;
+}
+
+.menu-list {
+  position: relative;
+}
+
+.regalo-header {
+  align-items: right;
+  height: 3em;
+}
+
+.carrito-header {
+  align-items: right;
+  height: 3em;
+}
+
+.quienes-somos {
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+  color: #DDD8C4;
+  justify-content: center;
+}
+
+/*HEADER BANNER*/
+.header-banner {
+  background-image: url("../assets/header_nos casamos.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.header-banner div {
+  text-align: left;
+  color: white;
+  padding-top: 250px;
+  padding-left: 50px;
+}
+.header-banner div h1 {
+  font-size: 80px;
+}
+
+/*CUERPO NOS CASAMOS*/
+.nos-casamos {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 0fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #DDD8C4;
+  padding-bottom: 50px;
+}
+.nos-casamos-pareja {
+  margin: auto;
+  grid-area: 3/1/6/3;
+  width: 800px;
+  height: 450px;
+  overflow: hidden;
+  justify-items: center;
+  display: flex;
+}
+.nos-casamos-mapa {
+  width: 800px;
+  height: 450px;
+  margin: auto;
+  grid-area: 3/3/6/6;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.nos-casamos-invitacion {
+  margin: auto;
+  grid-area: 1/1/3/6;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  justify-items: center;
+  display: flex;
+  text-align: center;
+}
+.nos-casamos-invitacion button {
+  background-color: #636564;
+  color: #A3C9A8;
+  font-size: 20px;
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+/*FOOTER*/
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4em;
+}
+
+.logo-footer {
+  position: relative;
+  height: 3em;
+  overflow: hidden;
+}
+
+/*REGALO CARROUSEL*/
+.carousel-inner {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+/*REGALAR PARA EL HOGAR*/
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 0 4em;
+}
+.galeria h3 {
+  font-size: 1.5em;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.galeria--cont {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.item-img {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  padding: 5px;
+  justify-items: center;
+  display: flex;
+  flex-flow: wrap;
+}
+.item-img a img {
+  width: 100%;
+  flex-flow: wrap;
+  height: 300px;
+  overflow: hidden;
+  justify-items: center;
+  display: flex;
+  align-items: center;
+}
+
+/*CARRITO*/
+.carrito {
+  padding: 25px;
+}
+
+.espacio {
+  padding-top: 15px;
+}
+
+/*NOSOTRAS*/
+.nosotras-imagen {
+  background-image: url("../assets/nosotras.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.nosotras-imagen div {
+  text-align: left;
+  color: white;
+  padding-top: 250px;
+  padding-left: 50px;
+}
+.nosotras-imagen div h1 {
+  font-size: 80px;
+}
+.nosotras-descripcion {
+  background-color: #A3C9A8;
+  padding: 25px;
+}
+
+/*RESPONSIVE*/
+/* T A B L E T */
+@media (max-width: 768px) {
+  .header-banner div h1 {
+    font-size: 50px;
+  }
+  .nosotras-imagen div h1 {
+    font-size: 50px;
+  }
+  .nos-casamos {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 6fr 0 0fr 0 0fr;
+    grid-template-rows: 4fr 2fr 4fr repeat(2, 0fr);
+  }
+  .nos-casamos-pareja {
+    justify-content: center;
+    grid-area: 1/1/2/2;
+    width: 100%;
+    height: 400px;
+  }
+  .nos-casamos-mapa {
+    justify-content: center;
+    grid-area: 3/1/4/2;
+    align-items: center;
+  }
+  .nos-casamos-invitacion {
+    justify-content: center;
+    grid-area: 2/1/3/2;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+  }
+}
+/* M O B I L E */
+@media (max-width: 576px) {
+  .header-banner div h1 {
+    font-size: 30px;
+  }
+  .nosotras-imagen div h1 {
+    font-size: 30px;
+  }
+}

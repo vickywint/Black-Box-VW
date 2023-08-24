@@ -1,0 +1,48 @@
+/*CUERPO NOS CASAMOS*/
+.nos-casamos {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 0fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: $hueso;
+    padding-bottom: 50px;
+     &-pareja {
+       margin: auto;
+       grid-area: 3 / 1 / 6 / 3;  
+       width: 800px;
+       height: 450px;
+       overflow: hidden;
+       justify-items: center;
+       display: flex;
+     }
+     &-mapa {
+         width: 800px;
+         height: 450px;
+         margin: auto;
+         grid-area: 3 / 3 / 6 / 6;
+         align-items: center;
+         justify-content: center;
+         overflow: hidden;
+     }
+     &-invitacion {
+       margin: auto;
+       grid-area: 1 / 1 / 3 / 6; 
+       width: 400px;
+       height: 250px;
+       overflow: hidden;
+       justify-items: center;
+       display: flex;
+       text-align: center;
+         & button {
+           background-color: $gris;
+           color: $verde;
+           font-size: 20px;
+           animation: bounce;
+           animation-duration: 2s;
+         }
+     }
+    }

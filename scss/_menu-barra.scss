@@ -1,0 +1,36 @@
+/*MENU BARRA*/
+.menu-header {
+    background-color: $negro;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 4em;
+    /* fixed*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* z-index*/
+    z-index: 1;
+  }
+  .logo-header {
+    height: 3em;
+    overflow: hidden;
+ }
+ .menu-list {
+   position: relative;
+ }
+ .regalo-header {
+    align-items: right;
+    height: 3em;
+ }
+ .carrito-header {
+    align-items: right;
+    height: 3em;
+ }
+ .quienes-somos {
+   list-style: none;
+   text-decoration: none;
+   position: relative;
+   color: $hueso;
+   justify-content: center;
+  }

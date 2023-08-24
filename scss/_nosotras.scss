@@ -1,0 +1,22 @@
+/*NOSOTRAS*/
+.nosotras {
+    &-imagen {
+      background-image: url("../assets/nosotras.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      & div {
+           text-align: left;
+          color: $blanco;
+          padding-top: 250px;
+          padding-left: 50px;
+         & h1 {
+          font-size: $h1;
+         }
+      }
+    }
+    &-descripcion {
+      background-color: $verde;
+      padding: 25px;
+    }
+}

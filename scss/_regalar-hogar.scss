@@ -1,0 +1,36 @@
+/*REGALAR PARA EL HOGAR*/
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0 4em;
+    & h3 {
+      font-size: 1.5em;
+      padding-bottom: 25px;
+      text-align: center;
+    }
+    &--cont {
+     display: flex;
+     flex-flow: wrap;
+     justify-content: center;
+    }
+  }
+  
+ .item-img {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    padding: 5px;
+    justify-items: center;
+    display: flex;
+    flex-flow: wrap;
+    & a img {
+     width: 100%;
+     flex-flow: wrap;
+     height: 300px;
+     overflow: hidden;
+     justify-items: center;
+     display: flex;
+     align-items: center;
+    }
+  }
